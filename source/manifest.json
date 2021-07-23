@@ -1,0 +1,24 @@
+{
+	"name": "Hide Huddles For Slack",
+	"version": "0.0.1",
+	"description": "It hides Slack's Huddles from your Sidebar. So you can focus on real things",
+	"homepage_url": "https://github.com/AshikNesin/hide-huddles-for-slack",
+	"manifest_version": 2,
+	"minimum_chrome_version": "74",
+	"icons": {
+		"128": "icon.png"
+	},
+	"permissions": [
+		"https://app.slack.com/*"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://app.slack.com/*"
+			],
+			"css": [
+				"styles.css"
+			]
+		}
+	]
+}
